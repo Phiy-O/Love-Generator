@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Generator | Practice</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="card-container">
+            <h2>L<span style="font-size: 1.1em; color: var(--color-primary); font-family: 'pil love';">O</span>VE GENERATOR</h2>
+            <p id="status">status : Unknown</p>
+                <div class="label-container">
+                    <div class="yourname-container">
+                        <label for="yourname-input">Yourname :</label>
+                        <input type="text" id="yourname-input" placeholder="type yourname..">
+                    </div>
+                    <img id="love-img" src="assets/pink-love-pixel.png" alt="love-img">
+                    <div class="crushname-container">
+                        <label for="crushname-input">Crushname :</label>
+                        <input type="text" id="crushname-input" placeholder="type crushname..">
+                    </div>
+                </div>
+                <button id="generate-button" onclick="generate()"><span style="color: #FFF; font-family: 'pil love';">O</span></button>
+                <p id="result-display">start generate!</p>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/ebb2aa59d3.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
