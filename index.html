@@ -14,7 +14,7 @@
     <div class="container">
         <div class="card-container">
             <h2>L<span style="font-size: 1.1em; color: var(--color-primary); font-family: 'pil love';">O</span>VE GENERATOR</h2>
-            <p id="status">status : Unknown</p>
+            <p id="status">status : unknown</p>
                 <div class="label-container">
                     <div class="yourname-container">
                         <label for="yourname-input">Yourname :</label>
@@ -28,6 +28,21 @@
                 </div>
                 <button id="generate-button" onclick="generate()"><span style="color: #FFF; font-family: 'pil love';">O</span></button>
                 <p id="result-display">start generate!</p>
+        </div>
+
+        <!-- Quiz -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <h2>Love Quiz<span style="font-size: 1.1em; color: var(--color-primary); font-family: 'pil love';">O</span></h2><hr>
+                <p id="question">Question goes here!</p>
+                <div id="answer-buttons" class="answer-buttons">
+
+                </div>
+                <div class="footer-container">
+                    <button id="close-button" onclick="closeModal()">Close</button>
+                    <button id="next-button">Next</button>
+                </div>
+            </div>
         </div>
     </div>
 
