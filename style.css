@@ -48,10 +48,11 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: fit-content;
     width: 90%;
     height: 40px;
     border: 2px solid var(--color-accent);
-    font-size: 2em;
+    font-size: 1.6em;
     background-color: #f2b18c73;
 }
 
@@ -121,4 +122,97 @@ label {
 #result-display {
     font-size: 2em;
     padding: 12px 0;
+}
+
+/* Modal */
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  background: white;
+  margin: 10% auto;
+  padding: 1rem;
+  width: 400px;
+  border-radius: 12px;
+}
+
+#question{
+    font-size: 1.5em;
+}
+
+.btn {
+    height: 40px;
+    width: 100%;
+    font-size: 1.2em;
+    text-align: left;
+    padding-left: 10px;
+    cursor: pointer;
+    margin: 8px 0;
+    border: 2px solid var(--color-accent);
+}
+
+.btn:hover {
+    background-color: var(--color-accent);
+    color: white;
+}
+
+.selected {
+    border: 2px solid var(--color-primary);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#next-button, #close-button {
+    width: 20%;
+    height: 35px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    background-color: var(--color-primary);
+    color: #FFF;
+}
+
+#next-button:hover, #close-button:hover {
+    filter: brightness(0.8);
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+    body {
+        height: 100dvh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #status {
+        width: 70%;
+        font-size: 1.3em;
+    }
+
+    .card-container {
+        width: 300px;
+    }
+
+    .label-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        text-align: center;
+        margin: 10px 0;
+    }
 }
